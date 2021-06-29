@@ -1,0 +1,23 @@
+{
+  "name": "clone_web1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node-sass": "node-sass assets/scss/custom-bootstrap.scss -o assets/css/ --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingorfarmer/clone_web1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kingorfarmer/clone_web1/issues"
+  },
+  "homepage": "https://github.com/kingorfarmer/clone_web1#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

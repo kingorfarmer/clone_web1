@@ -1,0 +1,34 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("../assets/font/Montserrat/Montserrat-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../assets/font/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__right .list__menu {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.menu__right .list__menu li {
+  list-style: none;
+}
+
+.list__menu li a {
+  text-decoration: none;
+  padding: 10px;
+}
