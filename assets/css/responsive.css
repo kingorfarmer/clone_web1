@@ -1,0 +1,113 @@
+@media only screen and (max-width: 1024px) {
+  .hero__wrapper .hero__content {
+    top: 15%;
+  }
+
+  .hero__content .hero__title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  .hero__content .hero__subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 4px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menu__right .list__menu {
+    display: none;
+  }
+
+  .menu__right .menu__topbar {
+    display: block;
+  }
+
+  .hero__wrapper .hero__content {
+    top: 5%;
+  }
+
+  .hero__content .hero__title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  .hero__content .hero__subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 4px;
+  }
+
+  .role__company {
+    width: auto;
+  }
+
+  .role__card {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+}
+
+@media only screen and (max-width: 480px) {
+  .menu__overlay .slide__menu {
+    width: 100%;
+  }
+
+  .hero__content .hero__title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  .hero__content .hero__subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 4px;
+  }
+
+  .hero__wrapper .hero__banner {
+    display: none;
+  }
+
+  .hero__wrapper .hero__content {
+    position: relative;
+    left: 8%;
+    top: 10%;
+  }
+
+  .role__card {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .hero__wrapper .hero__content {
+    position: relative;
+    left: 8%;
+    top: 10%;
+  }
+
+  .hero__content .hero__title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  .hero__content .hero__subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .role__card .more__link {
+    font-size: 13px;
+  }
+}

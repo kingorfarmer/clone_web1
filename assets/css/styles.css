@@ -128,10 +128,6 @@ table {
   border-spacing: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 @font-face {
   font-family: "Montserrat";
   src: url("../assets/font/Montserrat-Regular.ttf") format("truetype");
@@ -178,6 +174,10 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.list__menu li a i {
+  margin-left: 4px;
+}
+
 .list__menu li a:hover {
   color: #000;
 }
@@ -203,7 +203,7 @@ body {
   width: 50%;
   background-color: #000;
   right: 0;
-  height: 100vh;
+  height: 100%;
 }
 
 .slide__menu .menu__items {
@@ -242,7 +242,6 @@ body {
 }
 
 .hero__wrapper .hero__banner {
-  position: absolute;
   width: 50%;
 }
 
@@ -250,6 +249,7 @@ body {
   position: absolute;
   top: 100px;
   left: 40%;
+  display: inline-block;
 }
 
 .hero__content .hero__button {
@@ -265,6 +265,7 @@ body {
   font-size: 14px;
   border-radius: 20px;
   box-shadow: 1px 1px 8px rgba(247, 231, 11, 0.5);
+  text-decoration: none;
 }
 
 .hero__content .hero__title {
@@ -285,46 +286,15 @@ body {
   margin-left: 4px;
 }
 
-.swiper-container {
-  width: 600px;
-  height: 300px;
-}
-
-@media only screen and (max-width: 1024px) {
-}
-
-@media only screen and (max-width: 768px) {
-  .menu__right .list__menu {
-    display: none;
-  }
-
-  .menu__right .menu__topbar {
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-}
-
-@media only screen and (max-width: 480px) {
-  .menu__overlay .slide__menu {
-    width: 100%;
-  }
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 500px;
+/* .slideshow-container {
+  width: 800px;
   position: relative;
-  margin: auto;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -338,23 +308,10 @@ body {
   transform: translateY(-50%);
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 12px;
@@ -369,30 +326,99 @@ body {
 .active__dot,
 .dot:hover {
   background-color: #717171;
+} */
+
+.role__company {
+  width: 940px;
+  margin: 60px auto;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.role__card {
+  width: 200px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  transition: 150ms ease-in;
 }
 
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+.role__card .icon__circle {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(247, 231, 11);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+.role__card .role__title {
+  font-weight: 800;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.role__card .role__subtitle {
+  font-size: 14px;
+  margin: 10px 0;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.role__card:hover {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+}
+
+.role__card .more__link {
+  display: flex;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  font-size: 14px;
+  align-items: center;
+}
+
+.role__card .more__link img {
+  width: 16px;
+  margin-left: 4px;
+}
+
+.year__experience {
+  width: 120px;
+  height: 120px;
+  background-color: rgb(247, 231, 11);
+  position: relative;
+}
+
+.year__experience span {
+  font-weight: 800;
+  font-size: 64px;
+  position: absolute;
+  right: -55px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.experience__text {
+  font-weight: 800;
+  font-size: 24px;
+  margin: 10px 0 0 40px;
+}
+
+.construction__img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.experience__content .more__link {
+  display: flex;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  font-size: 14px;
+  align-items: center;
+}
+
+.experience__content .more__link img {
+  width: 16px;
+  margin-left: 4px;
 }
