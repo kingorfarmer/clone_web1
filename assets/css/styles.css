@@ -173,7 +173,7 @@ body {
   padding: 10px;
   font-weight: 700;
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.5);
+  color: #969696;
 }
 
 .list__menu li a i {
@@ -257,7 +257,7 @@ body {
 .hero__content .hero__button {
   width: 200px;
   display: flex;
-  background-color: rgb(247, 231, 11);
+  background-color: #f7dd35;
   padding-top: 10px;
   padding-bottom: 10px;
   align-items: center;
@@ -266,7 +266,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   border-radius: 20px;
-  box-shadow: 1px 1px 8px rgba(247, 231, 11, 0.5);
+  box-shadow: 1px 1px 8px rgba(247, 221, 53, 0.5);
   text-decoration: none;
 }
 
@@ -330,9 +330,11 @@ body {
   background-color: #717171;
 } */
 
-.role__company {
+.role__company,
+.services__wrapper {
+  position: relative;
   width: 850px;
-  margin: 40px auto;
+  margin: 70px auto;
 }
 
 .role__card {
@@ -345,7 +347,7 @@ body {
 .role__card .icon__circle {
   width: 40px;
   height: 40px;
-  background-color: rgb(247, 231, 11);
+  background-color: #f7dd35;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -362,7 +364,7 @@ body {
   font-size: 14px;
   margin: 10px 0;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.5);
+  color: #5c5c5c;
 }
 
 .role__card:hover {
@@ -372,13 +374,15 @@ body {
 .role__card .more__link {
   display: flex;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.5);
+  color: #969696;
   font-weight: 700;
   font-size: 14px;
   align-items: center;
 }
 
-.role__card .more__link img {
+.role__card .more__link img,
+.services__more .more__icon img,
+.experience__content .more__link img {
   width: 16px;
   margin-left: 4px;
 }
@@ -391,7 +395,7 @@ body {
 .left__content .year__experience {
   width: 120px;
   height: 120px;
-  background-color: rgb(247, 231, 11);
+  background-color: #f7dd35;
   position: relative;
 }
 
@@ -416,20 +420,88 @@ body {
   object-fit: cover;
 }
 
-.experience__content .heading__experience {
-  font-size: 16px;
+.experience__content .heading__experience,
+.services__wrapper .services__title {
+  font-size: 24px;
+  font-weight: 500;
 }
 
-.experience__content .more__link {
+.experience__content .title__experience,
+.services__wrapper .services__subtitle {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 0.9;
+  margin: 4px 0 30px 0;
+}
+
+.services__wrapper .services__more {
+  position: absolute;
+  right: -10%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.services__wrapper .services__more:hover {
+  color: #000;
+}
+
+.experience__content .subtitle__experience {
+  font-size: 14px;
+  margin: 18px 0;
+  font-weight: 500;
+  color: #5c5c5c;
+  padding-right: 20px;
+  line-height: 1.5;
+}
+
+.experience__content .more__link,
+.services__more .more__text {
   display: flex;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.5);
+  color: #969696;
   font-weight: 700;
   font-size: 14px;
   align-items: center;
 }
 
-.experience__content .more__link img {
-  width: 16px;
-  margin-left: 4px;
+.services__more .more__icon {
+  width: 32px;
+  height: 32px;
+  background-color: #f7dd35;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.services__more .more__icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.services__card {
+  margin-right: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 200ms ease-in;
+}
+
+.services__card:hover {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+}
+
+.services__card .services__text {
+  font-weight: 800;
+  font-size: 20px;
+  padding: 20px 10px;
+}
+
+.services__card .services__images {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }

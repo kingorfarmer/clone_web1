@@ -19,6 +19,9 @@
   .experience__wrapper {
     width: 100%;
   }
+
+  .services__wrapper .services__more {
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -53,6 +56,11 @@
 
   .role__card {
     width: 150px;
+    padding-left: 20px;
+  }
+
+  .construction__img {
+    margin-top: 20px;
   }
 }
 
@@ -89,6 +97,22 @@
 
   .role__card {
     width: auto;
+  }
+
+  .left__content .year__experience {
+    margin-left: 50px;
+  }
+
+  .left__content .experience__text {
+    margin-left: 50px;
+  }
+
+  .experience__content {
+    margin: 30px 40px 30px 40px;
+  }
+
+  .experience__content .title__experience {
+    font-size: 28px;
   }
 }
 
