@@ -21,7 +21,13 @@
   }
 
   .services__wrapper .services__more {
+    right: -8%;
   }
+
+  /* .role__company,
+  .services__wrapper {
+    width: 100%;
+  } */
 }
 
 @media only screen and (max-width: 768px) {
@@ -61,6 +67,25 @@
 
   .construction__img {
     margin-top: 20px;
+  }
+
+  .services__wrapper {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .services__card {
+    margin-bottom: 20px;
+  }
+
+  .services__wrapper .card__wrapper {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .services__wrapper .services__more {
+    right: -16%;
   }
 }
 
@@ -113,6 +138,15 @@
 
   .experience__content .title__experience {
     font-size: 28px;
+  }
+
+  .services__wrapper .card__wrapper {
+    width: 100%;
+  }
+
+  .services__wrapper .services__more {
+    position: relative;
+    right: 0;
   }
 }
 
