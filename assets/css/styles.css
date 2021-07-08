@@ -128,7 +128,7 @@ table {
   border-spacing: 0;
 }
 
-/* CSS */
+/* Fonts */
 
 @font-face {
   font-family: "Montserrat";
@@ -136,19 +136,57 @@ table {
     url("../font/Montserrat/Montserrat-Regular.woff") format("woff"),
     url("../font/Montserrat/Montserrat-Regular.svg") format("svg"),
     url("../font/Montserrat/Montserrat-Regular.eot") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 400;
 }
 
 @font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat/Montserrat-Medium.ttf") format("truetype"),
+    url("../font/Montserrat/Montserrat-Medium.woff") format("woff"),
+    url("../font/Montserrat/Montserrat-Medium.svg") format("svg"),
+    url("../font/Montserrat/Montserrat-Medium.eot") format("embedded-opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat/Montserrat-SemiBold.ttf") format("truetype"),
+    url("../font/Montserrat/Montserrat-SemiBold.woff") format("woff"),
+    url("../font/Montserrat/Montserrat-SemiBold.svg") format("svg"),
+    url("../font/Montserrat/Montserrat-SemiBold.eot")
+      format("embedded-opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat/Montserrat-Bold.ttf") format("truetype"),
+    url("../font/Montserrat/Montserrat-Bold.woff") format("woff"),
+    url("../font/Montserrat/Montserrat-Bold.svg") format("svg"),
+    url("../font/Montserrat/Montserrat-Bold.eot") format("embedded-opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat/Montserrat-ExtraBold.ttf") format("truetype"),
+    url("../font/Montserrat/Montserrat-ExtraBold.woff") format("woff"),
+    url("../font/Montserrat/Montserrat-ExtraBold.svg") format("svg"),
+    url("../font/Montserrat/Montserrat-ExtraBold.eot")
+      format("embedded-opentype");
+  font-weight: 800;
+}
+
+/* @font-face {
   font-family: "Poppins";
   src: url("../font/Poppins/Poppins-Regular.ttf") format("truetype"),
     url("../font/Poppins/Poppins-Regular.woff") format("woff"),
     url("../font/Poppins/Poppins-Regular.svg") format("svg"),
     url("../font/Poppins/Poppins-Regular.eot") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal;
-}
+  font-weight: 400;
+} */
+
+/* CSS */
 
 body {
   font-family: "Montserrat";
@@ -163,6 +201,39 @@ body {
 
 .menu__right .list__menu {
   display: flex;
+}
+
+.list__menu .about__menu {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 150px;
+  list-style: none;
+  display: none;
+  background-color: black;
+  z-index: 9999;
+  border-radius: 8px;
+}
+
+.list__menu .about__menu li {
+  padding: 16px;
+  text-align: end;
+}
+
+.list__menu .about__menu li a {
+  color: #f7dd35;
+}
+
+.list__menu .about__menu li a:hover {
+  color: white;
+}
+
+.list__menu li:nth-child(3) {
+  position: relative;
+}
+
+.list__menu li:nth-child(3):hover .about__menu {
+  display: block;
 }
 
 .menu__right .menu__topbar {
@@ -212,9 +283,15 @@ body {
   background-color: #000;
   right: 0;
   height: 100%;
+  overflow: auto;
 }
 
 .slide__menu .menu__items {
+  margin-left: 20px;
+}
+
+.menu__items .about__menu {
+  display: none;
   margin-left: 20px;
 }
 
@@ -228,6 +305,10 @@ body {
   font-weight: 700;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.menu__items li a span {
+  margin-left: 4px;
 }
 
 .menu__items li .active {
@@ -343,10 +424,13 @@ body {
 }
 
 .role__card {
-  width: 200px;
   padding: 20px 10px;
   border-radius: 10px;
   transition: 150ms ease-in;
+}
+
+.role__card:hover {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
 }
 
 .role__card .icon__circle {
@@ -360,7 +444,7 @@ body {
 }
 
 .role__card .role__title {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 20px;
   margin: 10px 0;
 }
@@ -371,10 +455,6 @@ body {
   font-weight: 500;
   color: #5c5c5c;
   line-height: 1.5;
-}
-
-.role__card:hover {
-  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
 }
 
 .role__card .more__link {
@@ -394,8 +474,19 @@ body {
 }
 
 .experience__wrapper {
-  width: 1140px;
-  margin: 0 auto;
+  display: flex;
+}
+
+.experience__wrapper .left__wrapper {
+  display: flex;
+}
+
+.experience__wrapper .left__content {
+  margin-left: 50px;
+}
+
+.experience__wrapper .experience__content {
+  padding: 0 50px;
 }
 
 .left__content .year__experience {
@@ -415,7 +506,7 @@ body {
 }
 
 .left__content .experience__text {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 24px;
   margin: 10px 0 0 40px;
 }
@@ -435,7 +526,7 @@ body {
 .experience__content .title__experience,
 .services__wrapper .services__subtitle {
   font-size: 36px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 0.9;
   margin: 4px 0 30px 0;
 }
@@ -463,7 +554,6 @@ body {
   margin: 18px 0;
   font-weight: 500;
   color: #5c5c5c;
-  padding-right: 20px;
   line-height: 1.5;
 }
 
@@ -493,8 +583,11 @@ body {
   height: 20px;
 }
 
-.services__card {
-  margin-right: 10px;
+.link__card:hover {
+  text-decoration: none;
+}
+
+.link__card .services__card {
   border-radius: 10px;
   overflow: hidden;
   transition: 200ms ease-in;
@@ -505,9 +598,10 @@ body {
 }
 
 .services__card .services__text {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 20px;
   padding: 20px 10px;
+  color: #000;
 }
 
 .services__card .services__images {

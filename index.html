@@ -19,14 +19,22 @@
             <div><img src="./assets/img/logo.png" alt="logo"></div>
             <div class="menu__right">
                 <ul class="list__menu">
-                    <li><a href="" class="active">HOME</a></li>
-                    <li><a href="">HEATH & SAFETY</a></li>
-                    <li><a href="">ABOUT<i class="fas fa-chevron-down fa-xs"></i></a></li>
-                    <li><a href="">WORK</a></li>
-                    <li><a href="">CLIENTS</a></li>
-                    <li><a href="">CAREERS</a></li>
-                    <li><a href="">CONTACT</a></li>
-                    <li><a href=""><i class="fas fa-search fa-xs"></i></a></li>
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="#">HEATH & SAFETY</a></li>
+                    <li>
+                        <a href="#">ABOUT<i class="fas fa-chevron-down fa-xs"></i></a>
+                        <ul class="about__menu">
+                            <li><a href="#">Chicago</a></li>
+                            <li><a href="#">Los Angeles</a></li>
+                            <li><a href="#">New York</a></li>
+                            <li><a href="#">Seattle</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">WORK</a></li>
+                    <li><a href="#">CLIENTS</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#"><i class="fas fa-search fa-xs"></i></a></li>
                 </ul>
                 <div class="menu__topbar"><i class="fas fa-bars"></i></div>
             </div>
@@ -37,14 +45,22 @@
         <div class="slide__menu">
             <div class="close__menu"><i class="fas fa-times fa-lg"></i></div>
             <ul class="menu__items">
-                <li><a href="" class="active">HOME</a></li>
-                <li><a href="">HEATH & SAFETY</a></li>
-                <li><a href="">ABOUT<span><i class="fas fa-chevron-down fa-xs"></i></span></a></li>
-                <li><a href="">WORK</a></li>
-                <li><a href="">CLIENTS</a></li>
-                <li><a href="">CAREERS</a></li>
-                <li><a href="">CONTACT</a></li>
-                <li><a href=""><i class="fas fa-search fa-xs"></i></a></li>
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">HEATH & SAFETY</a></li>
+                <li>
+                    <a href="#">ABOUT<span><i class="fas fa-chevron-down fa-xs"></i></span></a>
+                    <ul class="about__menu">
+                        <li><a href="#">Chicago</a></li>
+                        <li><a href="#">Los Angeles</a></li>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">Seattle</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">WORK</a></li>
+                <li><a href="#">CLIENTS</a></li>
+                <li><a href="#">CAREERS</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#"><i class="fas fa-search fa-xs"></i></a></li>
             </ul>
         </div>
     </div>
@@ -87,6 +103,8 @@
                 </div>
             </div> -->
         </div>
+
+        <div style="max-width: 700px;margin: auto; height: 200px; background: red;"></div>
     </section>
 
     <section>
@@ -139,38 +157,33 @@
     </section>
 
     <section>
-        <div class="container-fluid">
 
-            <div class="experience__wrapper">
+        <div class="experience__wrapper">
 
-                <div class="row">
-                    <div class="col-12 col-sm-4 col-lg-3 col-xl-3">
-                        <div class="left__content">
-                            <div class="year__experience"><span>20+</span></div>
-                            <div class="experience__text">YEARS<br>EXPERIENCE</div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-4 col-lg-4 col-xl-4">
-                        <div class="experience__content">
-                            <div class="heading__experience">ABOUT US</div>
-                            <div class="title__experience">CASSIDY<br>CONSTRUCTION</div>
-                            <div class="subtitle__experience">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Curabitur at gravida sem. In at finibus massa.</div>
-                            <div class="subtitle__experience">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Curabitur at gravida sem. In at finibus massa.</div>
-                            <a class="more__link" href="#">READ MORE<img src="./assets/svg/right-arrow.svg"
-                                    alt="chevron-right"></a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-12 col-lg-5 col-xl-5">
-                        <div class="construction__img"><img src="./assets/img/interserve_Comstruction.jpg"
-                                alt="construction-worker"></div>
-                    </div>
+            <div class="left__wrapper">
+                <div class="left__content">
+                    <div class="year__experience"><span>20+</span></div>
+                    <div class="experience__text">YEARS<br>EXPERIENCE</div>
                 </div>
 
+                <div class="experience__content">
+                    <div class="heading__experience">ABOUT US</div>
+                    <div class="title__experience">CASSIDY<br>CONSTRUCTION</div>
+                    <div class="subtitle__experience">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur at gravida sem. In at finibus massa.</div>
+                    <div class="subtitle__experience">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur at gravida sem. In at finibus massa.</div>
+                    <a class="more__link" href="#">READ MORE<img src="./assets/svg/right-arrow.svg"
+                            alt="chevron-right"></a>
+                </div>
+            </div>
+
+            <div class="construction__img">
+                <img src="./assets/img/interserve_Comstruction.jpg" alt="construction-worker">
             </div>
 
         </div>
+
     </section>
 
     <section>
@@ -182,29 +195,37 @@
                 <div class="services__subtitle">WHAT WE DO</div>
                 <div class="card__wrapper">
                     <div class="row">
-                        <div class="col col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                            <div class="services__card">
-                                <img class="services__images" src="./assets/img/GettyImages-1220093801.jpg" alt="">
-                                <div class="services__text">Food &<br>Berverage</div>
-                            </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                            <a href="#" class="link__card">
+                                <div class="services__card">
+                                    <img class="services__images" src="./assets/img/GettyImages-1220093801.jpg" alt="">
+                                    <div class="services__text">Food &<br>Berverage</div>
+                                </div>
+                            </a>
                         </div>
-                        <div class="col col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                            <div class="services__card">
-                                <img class="services__images" src="./assets/img/GettyImages-1220093801.jpg" alt="">
-                                <div class="services__text">Food &<br>Berverage</div>
-                            </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                            <a href="#" class="link__card">
+                                <div class="services__card">
+                                    <img class="services__images" src="./assets/img/GettyImages-1220093801.jpg" alt="">
+                                    <div class="services__text">Food &<br>Berverage</div>
+                                </div>
+                            </a>
                         </div>
-                        <div class="col col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                            <div class="services__card">
-                                <img class="services__images" src="./assets/img/GettyImages-1220093801.jpg" alt="">
-                                <div class="services__text">Food &<br>Berverage</div>
-                            </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                            <a href="#" class="link__card">
+                                <div class="services__card">
+                                    <img class="services__images" src="./assets/img/GettyImages-1220093801.jpg" alt="">
+                                    <div class="services__text">Food &<br>Berverage</div>
+                                </div>
+                            </a>
                         </div>
-                        <div class="col col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                            <div class="services__card">
-                                <img class="services__images" src="./assets/img/GettyImages-1220093801.jpg" alt="">
-                                <div class="services__text">Food &<br>Berverage</div>
-                            </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                            <a href="#" class="link__card">
+                                <div class="services__card">
+                                    <img class="services__images" src="./assets/img/GettyImages-1220093801.jpg" alt="">
+                                    <div class="services__text">Food &<br>Berverage</div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <a href="#" class="services__more">

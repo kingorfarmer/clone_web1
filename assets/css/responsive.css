@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1024px) {
+/* @media only screen and (max-width: 1024px) {
   .hero__wrapper .hero__content {
     top: 15%;
   }
@@ -24,11 +24,11 @@
     right: -8%;
   }
 
-  /* .role__company,
+  .role__company,
   .services__wrapper {
     width: 100%;
-  } */
-}
+  }
+} */
 
 @media only screen and (max-width: 768px) {
   .menu__right .list__menu {
@@ -60,13 +60,16 @@
     width: auto;
   }
 
-  .role__card {
-    width: 150px;
-    padding-left: 20px;
+  /* .role__card {
+    padding-left: 16px;
+  } */
+
+  .experience__wrapper {
+    flex-direction: column;
   }
 
-  .construction__img {
-    margin-top: 20px;
+  .experience__wrapper .construction__img {
+    margin-top: 30px;
   }
 
   .services__wrapper {
@@ -120,20 +123,16 @@
     top: 10%;
   }
 
-  .role__card {
-    width: auto;
+  .experience__wrapper {
+    flex-direction: column;
   }
 
-  .left__content .year__experience {
-    margin-left: 50px;
-  }
-
-  .left__content .experience__text {
-    margin-left: 50px;
+  .experience__wrapper .left__wrapper {
+    flex-direction: column;
   }
 
   .experience__content {
-    margin: 30px 40px 30px 40px;
+    margin: 30px 0;
   }
 
   .experience__content .title__experience {
@@ -167,6 +166,14 @@
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 8px;
+  }
+
+  .experience__wrapper {
+    flex-direction: column;
+  }
+
+  .experience__wrapper .left__wrapper {
+    flex-direction: column;
   }
 
   .role__card .more__link {

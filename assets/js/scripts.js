@@ -1,12 +1,17 @@
-$('.menu__topbar').click(function(){
+$('.menu__topbar').click(function () {
     $('.menu__overlay').toggle();
     $('.slide__menu').toggle();
 })
 
-$('.close__menu').click(function(){
+$('.close__menu').click(function () {
     $('.menu__overlay').hide();
     $('.slide__menu').hide();
 })
+
+$('.menu__items li:nth-child(3)').click(function () {
+    $('.menu__items .about__menu').toggle();
+})
+
 
 // var slideIndex = 1;
 // showSlides(slideIndex);
